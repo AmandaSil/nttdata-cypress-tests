@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "test": "cypress run --browser chrome",
+    "test:cloud": "cypress run --record --browser chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.3.0"
+    "cypress": "^14.3.0",
+    "mochawesome": "^7.1.3"
   }
 }
